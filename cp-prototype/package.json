@@ -13,6 +13,13 @@
     "react": "file:../node_modules/react",
     "react-dom": "file:../node_modules/react-dom",
     "react-scripts": "file:../node_modules/react-scripts",
+    "@ckeditor/ckeditor5-build-classic": "file:../node_modules/@ckeditor/ckeditor5-build-classic",
+    "@ckeditor/ckeditor5-react": "file:../node_modules/@ckeditor/ckeditor5-react",
+    "@reduxjs/toolkit": "file:../node_modules/@reduxjs/toolkit",
+    "bootstrap": "file:../node_modules/bootstrap",
+    "react-bootstrap": "file:../node_modules/react-bootstrap",
+    "react-redux": "file:../node_modules/react-redux",
+    "dompurify": "file:../node_modules/dompurify",
     "cp-items": "file:.."
   },
   "devDependencies": {
