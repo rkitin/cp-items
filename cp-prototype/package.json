@@ -10,17 +10,16 @@
     "eject": "node ../node_modules/react-scripts/bin/react-scripts.js eject"
   },
   "dependencies": {
-    "react": "file:../node_modules/react",
-    "react-dom": "file:../node_modules/react-dom",
-    "react-scripts": "file:../node_modules/react-scripts",
-    "@ckeditor/ckeditor5-build-classic": "file:../node_modules/@ckeditor/ckeditor5-build-classic",
-    "@ckeditor/ckeditor5-react": "file:../node_modules/@ckeditor/ckeditor5-react",
-    "@reduxjs/toolkit": "file:../node_modules/@reduxjs/toolkit",
-    "bootstrap": "file:../node_modules/bootstrap",
-    "react-bootstrap": "file:../node_modules/react-bootstrap",
-    "react-redux": "file:../node_modules/react-redux",
-    "dompurify": "file:../node_modules/dompurify",
-    "cp-items": "file:.."
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1",
+    "@reduxjs/toolkit": "^1.6.2",
+    "bootstrap": "5.1.2",
+    "react-bootstrap": "^1.6.4",
+    "react-redux": "^7.2.5",
+    "dompurify": "^2.3.3",
+    "@ckeditor/ckeditor5-build-classic": "^30.0.0",
+    "@ckeditor/ckeditor5-react": "^3.0.3"
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"
