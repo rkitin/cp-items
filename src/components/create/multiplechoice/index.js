@@ -1,10 +1,12 @@
+/* eslint-disable prettier/prettier */
 import React from 'react'
 // import styles from './index.css'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 import { CKEditor } from '@ckeditor/ckeditor5-react'
 import { useDispatch } from 'react-redux'
 
-const MultipleChoice = ({ content, onUpdate, itemType }) => {
+const MultipleChoice = ({ content, onUpdate, itemType, testing }) => {
+  console.log('test')
   const dispatch = useDispatch()
   const updateItem = (key, value) => {
     // dispatch({ type: 'UPDATE_STEM_CONTENT', payload: { [key]: value } })
