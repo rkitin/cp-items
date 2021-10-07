@@ -31,9 +31,6 @@ const MultipleChoice = ({ content, onUpdate, itemType }) => {
       }}
       onChange={(event, editor) => {
         const data = editor.getData()
-        // console.log({ event, editor, data });
-        // onUpdate(data)
-        // reducer method call to update initial state in store
         updateItem('name', data)
       }}
       onBlur={(event, editor) => {
