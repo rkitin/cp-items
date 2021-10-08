@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './styles.module.css'
-import MultipleChoice from './components/create/multiplechoice'
+import MultipleChoice from './components/create/multiplechoice/MultipleChoice'
 import { MultipleChoicePreview } from './components/preview/MutlipleChoicePreview'
 import itemReducer from './reducers/item.reducer'
 
