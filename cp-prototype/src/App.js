@@ -6,16 +6,16 @@ import 'cp-items/dist/index.css'
 const App = () => {
 
   return (
-    <>
-      <div>Create: </div>
-      <br />
-      <MultipleChoice />
-
-      <div>Preview : </div>
-      <br />
-      <MultipleChoicePreview />
-
-    </>
+    <Fragment>
+      <div className="row">
+        <div >Create: </div>
+        <MultipleChoice />
+      </div>
+      <div className="row">
+        <div>Preview : </div>
+        <MultipleChoicePreview />
+      </div>
+    </Fragment>
   );
 }
 

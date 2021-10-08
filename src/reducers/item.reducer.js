@@ -1,6 +1,7 @@
 const initialState = {
   id: '',
   name: '',
+  stemContent: '',
   assessment_program_id: '',
   item_type_id: '',
   item_type_code: '',
@@ -41,7 +42,9 @@ const itemReducer = (state = initialState, action) => {
     case 'UPDATE_ITEM':
       return { ...state, ...action.payload }
     case 'UPDATE_STEM_CONTENT':
-      return { ...state, name: { ...action.payload.name } }
+      return { ...state, stemContent: action.payload.stemContent }
+    case 'UPDATE_NAME':
+      return { ...state, name: action.payload.name }
     case 'UPDATE_ITEM_JSON':
       return { ...state, item_json: { ...action.payload } }
     case 'CLEAR_ITEM':

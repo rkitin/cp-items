@@ -6,13 +6,25 @@ import { useDispatch } from 'react-redux'
 
 const MultipleChoice = ({ content, onUpdate, itemType }) => {
   const dispatch = useDispatch()
-  const updateItem = (key, value) => {
-    // dispatch({ type: 'UPDATE_STEM_CONTENT', payload: { [key]: value } })
+  
+  const updateStemContent = (key, value) => {
     dispatch({ type: 'UPDATE_STEM_CONTENT', payload: { [key]: value } })
+  }
+
+  const updateName = (key, value) => {
+    dispatch({ type: 'UPDATE_NAME', payload: { [key]: value } })
   }
 
   return (
     <Fragment>
+
+      <input  onChange={(event) => {
+        debugger;
+        console.log(event.target.value)
+          const data = event.target.value;
+          updateName('name', data)
+        }}></input>
+
       <CKEditor
         editor={ClassicEditor}
         config={
@@ -35,7 +47,7 @@ const MultipleChoice = ({ content, onUpdate, itemType }) => {
           // console.log({ event, editor, data });
           // onUpdate(data)
           // reducer method call to update initial state in store
-          updateItem('name', data)
+          updateStemContent('stemContent', data)
         }}
         onBlur={(event, editor) => {
           console.log('Blur.', editor)
