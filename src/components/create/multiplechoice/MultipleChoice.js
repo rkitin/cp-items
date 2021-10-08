@@ -4,6 +4,7 @@ import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 import { CKEditor } from '@ckeditor/ckeditor5-react'
 import { useDispatch } from 'react-redux'
 
+// content will be removed from props and uses store's version of item JSON
 const MultipleChoice = ({ content, onUpdate, itemType }) => {
   const dispatch = useDispatch()
   

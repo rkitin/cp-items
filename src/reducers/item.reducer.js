@@ -1,3 +1,5 @@
+// TODO Should this be fine being part of component initialization
+// or should it be created by Consumer application
 const initialState = {
   id: '',
   name: '',
