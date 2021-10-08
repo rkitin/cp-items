@@ -18,7 +18,7 @@
     "@reduxjs/toolkit": "file:../node_modules/@reduxjs/toolkit",
     "bootstrap": "file:../node_modules/bootstrap",
     "react-bootstrap": "file:../node_modules/react-bootstrap",
-    "react-redux": "file:../node_modules/react-redux",
+    "react-redux": "^7.2.5",
     "dompurify": "file:../node_modules/dompurify",
     "cp-items": "file:.."
   },
