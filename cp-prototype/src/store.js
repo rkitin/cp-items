@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { itemReducer } from 'cp-items';
+// import { itemReducer } from 'cp-items';
 import screenFoucs from './redux/reducers';
 
 export const store = configureStore({
   reducer: {
-    item: itemReducer,
+    // item: itemReducer,
     screenFoucs: screenFoucs
   },
 });

@@ -4,38 +4,39 @@ import { MultipleChoice, MultipleChoicePreview } from 'cp-items'
 import './index.css';
 import { useSelector } from 'react-redux'
 import DOMPurify from 'dompurify'
-import { item, content } from './redux/actions';
+import { item, content, reset } from './redux/actions';
 import { SELECT, ITEM, CONTENT } from './redux/constants';
 
 export const Content = () => {
-  const item = useSelector((store) => store.item)
-  const screenFoucs = useSelector((store) => store.screenFoucs);
+  const item = useSelector((store) => store?.item)
+  const screenFoucs = useSelector((store) => store?.screenFoucs);
   console.log(screenFoucs);
   return (
     <>
-      <span>
-        {DOMPurify.sanitize(JSON.stringify(item.name), {
+      {/* <span>
+        {DOMPurify.sanitize(JSON.stringify(item?.name), {
           USE_PROFILES: { html: true }
         })}{' '}
-      </span>
+      </span> */}
+      <div>{item?.name}</div>
 
-      <div>Create: </div>
+      <div>Create Item: </div>
       <br />
-      <MultipleChoice />
+      {/* <MultipleChoice /> */}
 
-      <div>Preview : </div>
+      <div>Preview Item: </div>
       <br />
-      <MultipleChoicePreview />
-
+      {/* <MultipleChoicePreview /> */}
+      <br />
     </>
   );
 }
 
 function cases(str) {
-  return str.replace(
+  return str?.replace(
     /\w\S*/g,
     function(txt) {
-      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+      return txt?.charAt(0)?.toUpperCase() + txt?.substr(1)?.toLowerCase();
     }
   );
 }
@@ -54,7 +55,7 @@ export const App = () => {
         dispatch(content(CONTENT));
       }
     } else {
-      dispatch(content(null));
+      dispatch(reset(null));
     }
   }
   return (
@@ -65,6 +66,7 @@ export const App = () => {
         <option value={CONTENT}>{cases(CONTENT)}</option>
       </select>
       <Content />
+      testing 4
     </>
   );
 };
