@@ -7,7 +7,7 @@ module.exports = {
     devtool: 'inline-source-map',
     entry: "./src/index.js",
     output: {
-        path: path.resolve("build"),
+        path: path.resolve(__dirname, 'dist'),
         filename: "index.js",
         library: pkg.name,
         libraryTarget: "commonjs2"

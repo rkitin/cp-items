@@ -1,0 +1,42 @@
+Starting the development server...
+
+
+<--- Last few GCs --->
+
+[30168:000001F9D8106B70]   126190 ms: Scavenge (reduce) 4077.7 (4088.3) -> 4077.2 (4089.6) MB, 25.8 / 0.0 ms  (average mu = 0.338, current mu = 0.327) allocation failure
+[30168:000001F9D8106B70]   126198 ms: Scavenge (reduce) 4077.9 (4091.6) -> 4077.3 (4092.1) MB, 6.6 / 0.0 
+ms  (average mu = 0.338, current mu = 0.327) allocation failure
+[30168:000001F9D8106B70]   126206 ms: Scavenge (reduce) 4078.1 (4089.1) -> 4077.5 (4090.1) MB, 6.3 / 0.0 
+ms  (average mu = 0.338, current mu = 0.327) allocation failure 
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory 
+ 1: 00007FF7FA32131F napi_wrap+109119
+ 2: 00007FF7FA2C6686 v8::internal::OrderedHashTable<v8::internal::OrderedHashSet,1>::NumberOfElementsOffset+33350
+ 3: 00007FF7FA2C7456 v8::internal::OrderedHashTable<v8::internal::OrderedHashSet,1>::NumberOfElementsOffset+36886
+ 4: 00007FF7FAB9589E v8::Isolate::ReportExternalAllocationLimitReached+94
+ 5: 00007FF7FAB7A6ED v8::SharedArrayBuffer::Externalize+781
+ 6: 00007FF7FAA24B2C v8::internal::Heap::EphemeronKeyWriteBarrierFromCode+1516
+ 7: 00007FF7FAA2FE8A v8::internal::Heap::ProtectUnprotectedMemoryChunks+1258
+ 8: 00007FF7FAA2D039 v8::internal::Heap::PageFlagsAreConsistent+2457
+ 9: 00007FF7FAA21BD1 v8::internal::Heap::CollectGarbage+2033
+10: 00007FF7FAA1FDD5 v8::internal::Heap::AllocateExternalBackingStore+1365
+11: 00007FF7FAA402F7 v8::internal::Factory::NewFillerObject+183
+12: 00007FF7FA76D9DF v8::internal::interpreter::JumpTableTargetOffsets::iterator::operator=+1039
+13: 00007FF7FAC1E6DD v8::internal::SetupIsolateDelegate::SetupHeap+463949
+14: 000001EBD8F5A7B9
+npm ERR! code ELIFECYCLE
+npm ERR! errno 134
+npm ERR! cp-items-example@0.0.0 start: `node ../node_modules/react-scripts/bin/react-scripts.js start`   
+npm ERR! Exit status 134
+npm ERR!
+npm ERR! Failed at the cp-items-example@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.       
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\KansasCB\AppData\Roaming\npm-cache\_logs\2021-10-08T12_13_13_815Z-debug.log        
+The terminal process "C:\Windows\System32\cmd.exe -ExecutionPolicy Bypass /d /c npm run start" terminated with exit code: 134.
+
+Terminal will be reused by tasks, press any key to close it.

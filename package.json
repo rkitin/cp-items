@@ -1,8 +1,8 @@
 {
   "name": "cp-items",
-  "version": "1.0.1",
+  "version": "2.0.2",
   "description": "All CP items and their preview components",
-  "author": "rcherukuri-sta",
+  "author": "skrishnaprasath",
   "license": "MIT",
   "repository": "kiteaai/cp-items",
   "main": "dist/index.js",
@@ -14,7 +14,7 @@
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack",
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "test": "react-scripts test"
   },
   "peerDependencies": {
