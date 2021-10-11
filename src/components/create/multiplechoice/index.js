@@ -13,7 +13,6 @@ const MultipleChoice = ({ content, onUpdate, itemType }) => {
   }
 
   return (
-<<<<<<< HEAD
     <div className="test">
       <input
         type='text'
@@ -39,36 +38,6 @@ const MultipleChoice = ({ content, onUpdate, itemType }) => {
       />
       <span>testing DOM 1...</span>
     </div>
-=======
-    <CKEditor
-      editor={ClassicEditor}
-      config={
-        {
-          // toolbar: {
-          //     items: [
-          //         'bold',
-          //         'MathType'
-          //     ]
-          // },
-        }
-      }
-      data=''
-      onReady={(editor) => {
-        // You can store the "editor" and use when it is needed.
-        console.log('Editor is ready to use!', editor)
-      }}
-      onChange={(event, editor) => {
-        const data = editor.getData()
-        updateItem('name', data)
-      }}
-      onBlur={(event, editor) => {
-        console.log('Blur.', editor)
-      }}
-      onFocus={(event, editor) => {
-        console.log('Focus.', editor)
-      }}
-    />
->>>>>>> 771e9175099c26c9a579566329496859e4c9893c
   )
 }
 
